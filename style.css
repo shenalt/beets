@@ -5,7 +5,8 @@
 }
 
 body{
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background: #212F3D;
 }
 
 i,svg {
@@ -22,24 +23,24 @@ i,svg {
 }
 
 .kick-pad {
-    background: rgb(181, 213, 220);
+    background: #934848;
 }
 .kick-pad.active {
-    background: rgb(0, 177, 221);
+    background: #9C0000;
 }
 
 .snare-pad {
-    background: rgb(174, 137, 176);
+    background: #9e6f41;
 }
 .snare-pad.active {
-    background: rgb(120, 0, 126);
+    background: #9c4e00;
 }
 
 .hihat-pad {
-    background: rgb(166, 206, 165);
+    background: #9b9b4e;
 }
 .hihat-pad.active {
-    background: rgb(11, 151, 8);
+    background: #9c9c00;
 }
 
 .sequencer{
@@ -73,7 +74,6 @@ i,svg {
     flex: 1;
     margin: 0rem 2rem;
 }
-
 .controls button {
     padding: 1rem;
     border: none;
@@ -83,6 +83,9 @@ i,svg {
     cursor: pointer;
     transition: all 0.5s ease;
 }
+.controls h1 {
+    color: white;
+}
 
 .pad{
     transition: all 0.5s ease;
@@ -91,18 +94,23 @@ i,svg {
 .play {
     padding: 1rem 2rem;
     font-size: 1.5rem;
-    background: rgb(80, 80, 80);
-    color: white;
+    background: rgb(219, 248, 245);
+    color: black;
     border: none;
     cursor: pointer;
     margin-top: 3rem;
+    border-radius: 10px;
 }
 
 select{
     padding: 1rem;
     font-size: 1rem;
+    border-radius: 10px;
 }
 
+.mute{
+    border-radius: 10px;
+}
 .mute.active {
     background: gray;
 }
@@ -115,6 +123,7 @@ select{
     margin: 2rem;
     font-size: 1.5rem;
     text-align: center;
+    color: white;
 }
 .tempo-slider{
     padding: 0.3rem;
@@ -122,7 +131,7 @@ select{
     margin: 1rem 0rem;
     width: 100%;
     position: relative;
-    background: rgb(80, 80, 80);
+    background: rgb(219, 248, 245);
     cursor: pointer;
     border-radius: 1rem;
 }
